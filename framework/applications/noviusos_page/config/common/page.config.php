@@ -32,6 +32,10 @@ return array(
                 return \Nos\Tools_Url::encodePath($page->url(array('preview'  => true)));
             },
         ),
+        'page_virtual_url' => array(
+            'title' => __('URL'),
+            'column' => 'page_virtual_url',
+        ),
         'is_home' => array(
             'value' => function ($page) {
                 return (bool) (int) $page->page_entrance;
